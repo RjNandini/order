@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Status Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="welcome-section">
+      <h1>Welcome to MyOrder App</h1>
+      <p>Track your order</p>
+    </div>
+    <div class="add-order-section">
+      <input type="text" id="customerName" placeholder="Customer Name">
+      <input type="text" id="orderNumber" placeholder="Order Number">
+      <button onclick="addOrder()">Add Order</button>
+    </div>
+    <div class="status-result" id="orderDetails"></div>
+    <div class="status-section">
+      <input type="text" id="orderID" placeholder="Enter Order ID">
+      <button onclick="trackOrder()">Track Order</button>
+    </div>
+    <div class="status-result" id="statusResult"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
